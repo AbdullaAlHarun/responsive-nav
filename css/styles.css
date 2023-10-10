@@ -1,0 +1,70 @@
+/*Universal Selector (*) */
+*{
+    color:red;
+    font-size: 28px;
+}
+a:hover {
+    background-color: yellow;
+}
+p{
+    color: blue;
+}
+
+.highlight {
+    color:green;
+}
+
+/*Psedo elements */
+
+.highlight::first-letter {
+    font-size: 40px;
+}
+
+#header {
+    background-color: yellow;
+}
+
+article p {
+    color:deeppink;
+}
+
+ul li:first-child{
+    background-color: blueviolet;
+}
+
+ul li:last-child{
+    background-color: orangered;
+}
+ul li:nth-child(2){
+    background-color: aquamarine;
+}
+input[type="text"] {
+    color:black;
+    font-size: 18px;
+    border-color: antiquewhite;
+}
+
+input[type="submit"] {
+    color:black;
+    font-size: 18px;
+    padding:8px;
+    text-transform: uppercase;
+    border-radius: 8px;
+}
+
+p::before {
+    content: "🌶️";
+}
+p::after {
+    content: "🌶️🌶️🌶️";
+}
+
+h1, p {
+    font-size: 35px;
+    font-family: monospace,serif;
+}
+
+
+p.demo::first-line {
+color:red;
+}

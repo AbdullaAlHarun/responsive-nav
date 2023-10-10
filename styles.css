@@ -1,0 +1,42 @@
+#desktop-section {
+    display:none;
+}
+/*small */
+@media(min-width: 640px) {
+    #desktop-section {
+        display:;
+    }
+    #mobile-section{
+        display: none;
+    }
+    
+}
+h1 {
+    color:red;
+}
+/*medium */
+
+@media(min-width: 768px) {
+  
+}
+
+/*Large */
+
+@media(min-width: 1024 px) {
+  h1{
+    color:green;
+  }
+
+}
+
+/*Extra Large */
+
+@media(min-width: 1280px) {
+  
+}
+
+/*Extra Extra Large */
+
+@media(min-width: 11536px) {
+  
+}

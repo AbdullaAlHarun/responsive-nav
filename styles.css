@@ -1,24 +1,84 @@
-.div-1 {
-    background: purple;
-    width: 100px;
-    height: 100px;
-    padding: 10px;
-    margin: 15px;
+*{
     box-sizing: border-box;
+    font-family: monaco, serif;
 }
 
-.div-2 {
-    background-color: blue;
-    width: 100px;
-    height: 100px;
+header {
+background-color: black;
+position: sticky;
+top: 0; 
+border-radius: 8px;
+padding: 8px 16px;
+
 }
-#header-id {
-    color: blue;
+nav {
+    display: none;
+    background: black;
+    border-radius:  8px;
 }
-.header {
-    color: green;
+nav ul {
+    padding: 0;
+    margin: 0;
+}
+nav li {
+    padding: 8px 0;
+}
+nav a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+nav li a:hover {
+    text-decoration: underline;
 }
 
-h2 {
-    color: red;
+#menu-checkbox:checked ~ nav {
+    display: block;
+}
+
+#menu-checkbox {
+    display: none;
+}
+
+label {
+    font-size: 38px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+
+/* Small (sm) */
+@media (min-width: 640px) {
+
+}
+
+/* Medium (md) */
+@media (min-width: 768px) {
+    /* Your styles for the medium breakpoint here */
+    header label {
+        display: none;
+    }
+    nav li {
+        display: inline-block;
+    }
+    header {
+        padding: 8px 0;
+    }
+}
+
+/* Large (lg) */
+@media (min-width: 1024px) {
+    /* Your styles for the large breakpoint here */
+}
+
+/* Extra Large (xl) */
+@media (min-width: 1280px) {
+    /* Your styles for the extra large breakpoint here */
+}
+
+/* 2XL (2xl) */
+@media (min-width: 1536px) {
+    /* Your styles for the 2XL breakpoint here */
 }

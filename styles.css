@@ -4,168 +4,82 @@
 }
 
 body {
+    height:100vh;
     margin:0;
-    position: relative;
-}
-
-header {
-    background: black;
-    position: sticky;
-    top: 0; 
-    padding: 8px 16px;
-    color: #fff;
-}
-
-nav {
-    display: none;
-    background: #000;
-    position: absolute;
-    top:65px;
-    width: 100%;
-    left: 0;
-    padding-left: 16px;;
-    height: 100vh;
-}
-nav ul {
-    padding: 0;
-    margin: 0;
-}
-nav li {
-    padding: 16px 0;
-}
-nav a {
-    color: #fff;
-    text-decoration: none;
-    text-transform: capitalize;
-}
-
-label {
-    font-size:38px;
-}
-    
-
-nav li a:hover {
-    text-decoration: underline;
-}
-
-#menu-checkbox:checked ~ nav {
-    display: block;
-}
-
-#menu-checkbox {
-    display: none;
-}
-
-nav ul {
-    list-style-type: none;
-}
-
-
-/* Small (sm) */
-@media (min-width: 640px) {
-
-}
-
-/* Medium (md) */
-@media (min-width: 768px) {
-    /* Your styles for the medium breakpoint here */
-    header {
-       padding: 8px 0;
-    }
-    nav {
-        display:block;
-        position: static;
-        top: initial;
-        width: initial;
-        left: initial;
-        padding-left: 8px;
-        height: auto;
-    }
-    header label{
-        display: none;
-    }
-    nav li {
-        display: inline-block;
-    }
-    nav li a:hover {
-        text-decoration: underline;
-    }
-}
-
-/* Large (lg) */
-@media (min-width: 1024px) {
-    /* Your styles for the large breakpoint here */
-}
-
-/* Extra Large (xl) */
-@media (min-width: 1280px) {
-    /* Your styles for the extra large breakpoint here */
-}
-
-/* 2XL (2xl) */
-@media (min-width: 1536px) {
-    /* Your styles for the 2XL breakpoint here */
-}
-
-
-/*documents-flow*/
-
-.div-1 {
-    background: red;
-}
-
-/*flex-box*/
-.container {
     display: flex;
-    background-color: darkgray;
-    border: 2px solid black;
-    height:700px;
-    width:400px;
-    justify-content: space-between;
-
-    /* :::X axis :::
-    justify-content: space-between;
-    justify-content: flex-start;
-    justify-content: flex-end;
-    justify-content: center;  
-    justify-content: space-around;
-  
-    
-    ::: Y Axis :::: 
+    background-color: #555;
+    justify-content: center;
     align-items: center;
-    align-items: flex-start;
-    align-items: flex-end;
-    */
 }
 
-.item {
-    border: 1px solid greenyellow;
-    background: darkolivegreen;
-    width: 75px;
-    color: yellow;
-    margin: 10px;
-}
-
-.item-1 {
-    height: 50px;
-}
-
-.item-2 {
-    height: 100px;
-}
-
-.item-3 {
-    height: 150px;
-}
-
-.container2 {
+/*Modal CSS */
+.modal-main {
+    border-radius: 8px;
+    height: 80vh;
+    background-color: white;
+    width: 900px;
+    max-width: 80%;
     display: flex;
-    margin-top: 20px;
-    background-color: rgb(190, 234, 14);
-    border: 2px solid black;
-    height:700px;
-    width:400px;
-    justify-content: space-between;
+    padding: 1rem;
     flex-direction: column;
-    align-items: center;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1rem .5rem 1rem;
+    border-bottom: 1px solid #777; 
+}
+
+.modal-header .title {
+    font-size: 1.5rem;
+    padding-top: 1rem;
+    align-self: flex-start;
+    padding-top: 0.5rem;
+    cursor: pointer;
+}
+
+.modal-header .fa-xmark {
+    font-size: 1.5rem;
+}
+
+.modal-body {
+    padding: 1rem;
+    overflow: auto;
+    flex-grow: 1;
+}
+
+.modal-footer {
+    display: flex;
+    justify-content: flex-end;
+    border-top: 1px solid #777;
+    padding: 0.5rem;
+    gap: .5rem;
+}
+
+.modal-footer .btn {
+    padding: .5rem 1rem;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    border-radius: .5rem;
+    font-size: inherit;
+
+}
+
+.btn-primary {
+    background-color: #1ca;
+}
+
+.btn-primary:hover .btn-primary:focus {
+    background-color: #018;
+}
+
+.btn-danger {
+    background-color: tomato;
+}
+
+
+.btn-danger:hover .btn-danger:focus {
+    background-color: #A11;
 }
